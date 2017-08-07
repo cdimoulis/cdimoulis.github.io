@@ -10,7 +10,7 @@ $(function(){
 function background() {
   var _lin_grad = "linear-gradient(60deg,rgba(0,0,0,.25),rgba(0,0,0,.25)),";
   var _rand = Math.ceil(Math.random()*2);
-  var _img = 'url("images/'+_rand+'_md.jpeg")'
+  var _img = 'url("images/'+_rand+'_sm.jpeg")'
   var _back_img = _lin_grad + _img
   var $body = $('body');
   $body.css('background-image', _back_img)
