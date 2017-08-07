@@ -2,21 +2,51 @@
 <html>
   <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="assets/js/onload.js"></script>
 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <script>
+      var _lin_grad = "linear-gradient(60deg,rgba(0,0,0,.25),rgba(0,0,0,.25)),";
+      var _rand = Math.ceil(Math.random()*2);
+      var _img = 'url("images/'+_rand+'_sm.jpeg")'
+      var _back_img = _lin_grad + _img
+    </script>
+
   </head>
-  <body>
+  <body class='is-loading'>
+    <script>
+      var $body = $('body');
+      $body.css('background-image', _back_img)
+      // Change background attributes if image 1
+      if (_rand == 1){
+        $body.css('background-position', 'top right');
+        if (matchMedia) {
+          var _mq = matchMedia('(max-width: 950px)');
+          _mq.addListener(widthChange);
+          widthChange(_mq);
+        }
+      }
+
+      function widthChange(mq) {
+        if (mq.matches) {
+          $body.css('background-position', 'top center');
+        }
+      }
+    </script>
 
     <div id='main-wrapper'>
-      <h2>Chris Dimoulis...</h2>
-    </div>
+      <h2>
+        Chris Dimoulis...
+      </h2>
 
-    <footer id='footer'>
-      <span>
-        &copy; Christopher James Dimoulis
-      </span>
-    </footer>
+
+      <footer id='footer'>
+        <span>
+          &copy; Christopher James Dimoulis
+        </span>
+      </footer>
+    </div>
 
   </body>
 </html>

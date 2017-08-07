@@ -6,7 +6,7 @@ footer#footer {
 	align-self: flex-end;
 	width: 100%;
 	padding: 1.5em 0 0 0;
-	color: rgba(0, 0, 0, 0.75);
+	color: rgba(255, 255, 255, 0.5);
 	cursor: default;
 	text-align: center;
 }
