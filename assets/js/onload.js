@@ -16,7 +16,7 @@ function background() {
   $body.css('background-image', _back_img)
   // Change background attributes if image 1
   if (_rand == 1){
-    $body.css('background-position', 'top right');
+    $body.css('background-position', 'center top');
     if (matchMedia) {
       var _mq = matchMedia('(max-width: 950px)');
       _mq.addListener(widthChange);
