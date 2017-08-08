@@ -32,12 +32,6 @@ html {
 body {
   height: 100%;
   background-color: #000;
-  /*background-image:
-    linear-gradient(60deg,
-      rgba(0,0,0,.25),
-      rgba(0,0,0,.25)
-    ),
-    url("../../images/1_sm.jpeg");*/
   background-repeat: no-repeat;
   background-size: cover;
 	background-position: center center;
@@ -79,7 +73,6 @@ TEXT PROPERTIES
 body, input, select, textarea {
   font-family: 'Noto Sans', sans-serif;
   text-transform: uppercase;
-  /*letter-spacing: .2em;*/
   letter-spacing: .1em;
 }
 
@@ -116,10 +109,6 @@ div#main-wrapper {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	/*-moz-align-items: center;
-	-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;*/
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
@@ -147,9 +136,10 @@ Main Information
 
 #main {
 	position: relative;
-  max-width: 54em;
-	min-width: 22em;
+  max-width: 50em;
+	min-width: 19em;
 	padding: 2em 0em ;
+  left: 8em;
 	cursor: default;
   background-color: rgba(255,255,255,.9);
 	text-align: center;
@@ -160,8 +150,8 @@ Main Information
 	/*-moz-transform: rotateX(0deg);
 	-webkit-transform: rotateX(0deg);
 	-ms-transform: rotateX(0deg);
-	transform: rotateX(0deg);*/
-	/*-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+	transform: rotateX(0deg);
+	-moz-transition: opacity 1s ease, -moz-transform 1s ease;
 	-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 	-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 	transition: opacity 1s ease, transform 1s ease;*/
@@ -193,6 +183,12 @@ Main Information
 
 #main .info .display{
   min-height: 6em;
+}
+
+@media screen and (max-width: 1200px) {
+  #main {
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -232,7 +228,10 @@ Main Information
 }
 
 
-/* List */
+
+/*
+  List
+*/
 
 ol {
 	list-style: decimal;
@@ -246,7 +245,7 @@ ol li {
 
 ul {
 	list-style: disc;
-	margin: 0; /* 0 1.5em 0;*/
+	margin: 0;
 	padding-left: 1em;
 }
 
@@ -278,7 +277,7 @@ ul.icons {
 
 ul.icons li {
 	display: inline-block;
-	padding: 0.675em 0.5em;
+	padding: 0.675em 0.25em;
 }
 
 ul.icons li a {
