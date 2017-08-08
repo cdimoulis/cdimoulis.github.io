@@ -136,10 +136,6 @@ div#main-wrapper {
 	z-index: 2;
 }
 
-#wrapper > * {
-	z-index: 1;
-}
-
 #main-wrapper:before {
 	content: '';
 	display: block;
@@ -151,14 +147,11 @@ Main Information
 
 #main {
 	position: relative;
-	/*max-width: 100%;*/
   max-width: 54em;
 	min-width: 22em;
 	padding: 2em 0em ;
-	/*background: #ffffff;*/
 	cursor: default;
   background-color: rgba(255,255,255,.9);
-	/*opacity: 0.95;*/
 	text-align: center;
 	-moz-transform-origin: 50% 50%;
 	-webkit-transform-origin: 50% 50%;
@@ -176,31 +169,66 @@ Main Information
 
 #main .content {
   min-height: 12em;
+  width: 50%;
 }
 
 #main .image {
-	/*position: relative;*/
-	/*display: block;*/
   border-right: 1px solid #c8cccf;
   float: left;
-	/*margin-bottom: 1.5em;*/
-  width: 50%;
 }
+
 
 #main .image img {
 	display: block;
 	margin: 0 auto;
 	border-radius: 100%;
-	/*box-shadow: 0 0 0 1.5em #ffffff;*/
+  padding-top: 1.5em;
 }
 
 #main .info {
-	/*position: relative;*/
-	/*display: block;*/
   border-left: 1px solid #c8cccf;
+  padding: 0 1em;
   float: right;
-	/*margin-bottom: 1.5em;*/
-  width: 50%;
+}
+
+#main .info .display{
+  min-height: 6em;
+}
+
+@media screen and (max-width: 900px) {
+  #main .content {
+    display; block;
+    float: none;
+    width: 100%;
+  }
+
+  #main .image {
+    border-right: none;
+  }
+
+	#main .image:after {
+		content: '';
+		display: block;
+		position: absolute;
+    left: 3em;
+		width: calc(100% - 7em);
+		height: 2px;
+		background: #c8cccf;
+	}
+
+  #main .image img {
+    padding-bottom: 2em;
+  }
+
+  #main .info {
+    padding-top: 1em;
+    border-left: none;
+  }
+
+  #main .info h1 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 
@@ -218,7 +246,7 @@ ol li {
 
 ul {
 	list-style: disc;
-	margin: 0 0 1.5em 0;
+	margin: 0; /* 0 1.5em 0;*/
 	padding-left: 1em;
 }
 
