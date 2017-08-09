@@ -186,7 +186,7 @@ Main Information
 }
 
 #main .info .display{
-  min-height: 8em;
+  min-height: 6em;
 }
 
 @media screen and (max-width: 1200px) {
