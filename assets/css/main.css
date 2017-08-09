@@ -176,6 +176,7 @@ Main Information
 	margin: 0 auto;
 	border-radius: 100%;
   border: 2px solid #c8cccf;
+  /*transform: scale(.75);*/
 }
 
 #main .info {
@@ -185,7 +186,7 @@ Main Information
 }
 
 #main .info .display{
-  min-height: 6em;
+  min-height: 8em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -216,7 +217,7 @@ Main Information
 	}
 
   #main .image img {
-    padding-bottom: 2em;
+    margin-bottom: 2em;
   }
 
   #main .info {
