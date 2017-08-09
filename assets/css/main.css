@@ -367,3 +367,20 @@ dl dt {
 dl dd {
 	margin-left: 1.5em;
 }
+
+
+/*
+FOOTER
+*/
+
+footer#footer {
+	-moz-align-self: -moz-flex-end;
+	-webkit-align-self: -webkit-flex-end;
+	-ms-align-self: -ms-flex-end;
+	align-self: flex-end;
+	width: 100%;
+	padding: 1.5em 0 0 0;
+	color: rgba(255, 255, 255, 0.5);
+	cursor: default;
+	text-align: center;
+}
