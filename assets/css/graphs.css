@@ -1,0 +1,19 @@
+h2 {
+  text-align: center;
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+div.graph{
+  flex: 1;
+}
+
+img {
+  display: list-item;
+  margin: 0 auto;
+  max-width: 100%;
+}
